@@ -1,5 +1,5 @@
 import url from 'url';
-import https from 'https';
+import {https} from 'follow-redirects';
 import gunzip from 'gunzip-maybe';
 import LRUCache from 'lru-cache';
 
