@@ -113,12 +113,6 @@ export default function App() {
     window.localStorage.savedStats = stringStats;
   }, [stringStats]);
 
-  useEffect(() => {
-    fetch('/api/stats?period=last-month')
-      .then(res => res.json())
-      .then(setStats);
-  }, []);
-
   return (
     <Fragment>
       <Global styles={globalStyles} />
