@@ -2,7 +2,7 @@
 
 firebase-debug.log*
 npm-debug.log*
-
+dist
 /.env
 /node_modules/
 /public/_client/

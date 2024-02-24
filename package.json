@@ -4,6 +4,7 @@
   "description": "The CDN for everything on npm",
   "scripts": {
     "build": "rollup -c",
+    "ncc": "yarn build && ncc build server.js -o dist",
     "clean": "git clean -e '!/.env' -fdX .",
     "lint": "eslint .",
     "serve": "nodemon -w server.js server.js",
@@ -55,6 +56,7 @@
     "@babel/preset-react": "^7.0.0",
     "@typescript-eslint/eslint-plugin": "2.x",
     "@typescript-eslint/parser": "2.x",
+    "@vercel/ncc": "^0.38.1",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "10.x",
     "babel-jest": "^23.4.2",
